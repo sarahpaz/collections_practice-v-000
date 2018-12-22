@@ -19,5 +19,5 @@ def reverse_array(integer)
 end
 
 def kesha_maker(array)
-  array.each {|word| word[2] << "$"}
+  array.each.with_index {|word, index| if index == 2 "$"}
 end
