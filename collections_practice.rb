@@ -7,7 +7,7 @@ def sort_array_desc(array)
 end
 
 def sort_array_char_count(array)
-  arary.each do |word|
+  array.each do |word|
     word.sort.length
   end
 end
