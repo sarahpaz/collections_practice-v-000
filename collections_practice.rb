@@ -18,9 +18,9 @@ def reverse_array(integer)
   integer.reverse
 end
 
-# def kesha_maker(array)
-#   array.each {|word| word(3) = word("$")}
-# end
+def kesha_maker(array)
+  array.each {|word| word[2] = "$"}
+end
 
 def find_a(array)
   array.select {|word| word.start_with?('a')}
@@ -31,8 +31,10 @@ def sum_array(array)
 end
 
 def add_s(array)
-  array.each_with_index.collect do |element, index|
-    if array[1]
-      element(2) == element("$")
+  array.each_with_index.collect do |word|
+    if array[1] == word
+      word
+    else 
+      word + "s"
   end
 end
